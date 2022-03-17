@@ -34,6 +34,7 @@ namespace Peergrade_7.Controllers
             {
                 InitializeUsers();
                 Serializer.SerializeData(_users, UserPath);
+                Serializer.SerializeData(_mails, MailPath);
                 return Ok(_users);
             }
             catch (Exception e)
@@ -176,6 +177,7 @@ namespace Peergrade_7.Controllers
                 _users.Add(newUser);
                 GenerateMails(newUser);
                 Serializer.SerializeData(_users, UserPath);
+                Serializer.SerializeData(_mails, MailPath);
                 return Ok(newUser);
             }
             catch (Exception e)

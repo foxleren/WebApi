@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sBX3zzasb12VHbGi1jSz7CT2sO3EoRwGQWO0t2tycHTmB4F/SdKUmIqLiv6oaonli06rVwkHBUzLGYJjoGnDtg==",
+  "dgSpecHash": "/0Xy3xN9QD6+EhmAdZ6Si9bxJV0ofK7CY8wU9O3uBCuaAY21+OnS7X5PoIgLF9aZaAQB0J0CjfBpZfP8cb9Ygg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\foxle\\Documents\\GitHub\\hse\\Peergrades\\Peergrade 7\\Peergrade 7\\Peergrade 7.csproj",
+  "projectFilePath": "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\Peergrade 7\\Peergrade 7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\foxle\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\foxle\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
