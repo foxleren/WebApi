@@ -26,12 +26,12 @@ namespace Peergrade_7.Intruments
                 {
                     List<User> list = (objects).Cast<User>().ToList();
                     list.Sort();
-                    Serialize(list);
+                    Serialize(list, path);
                 }
                 else
                 {
                     List<Mail> list = (objects).Cast<Mail>().ToList();
-                    Serialize(list);
+                    Serialize(list, path);
                 }
             }
             catch (Exception e)
@@ -45,14 +45,14 @@ namespace Peergrade_7.Intruments
         /// </summary>
         /// <param name="list">Список объектов для сериализации</param>
         /// <typeparam name="T">Тип принимаемых данных</typeparam>
-        private static void Serialize<T>(List<T> list)
+        private static void Serialize<T>(List<T> list, string path)
         {
             try
             {
                 DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(List<User>));
 
                 using FileStream fs =
-                    new FileStream(Environment.CurrentDirectory + $"{Path.DirectorySeparatorChar}Users.json",
+                    new FileStream(Environment.CurrentDirectory + $"{Path.DirectorySeparatorChar}{path}",
                         FileMode.OpenOrCreate);
                 serializer.WriteObject(fs, list);
             }

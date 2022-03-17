@@ -113,7 +113,7 @@
             <param name="path">Путь к файлу .json</param>
             <typeparam name="T">Тип принимаемых данных</typeparam>
         </member>
-        <member name="M:Peergrade_7.Intruments.Serializer.Serialize``1(System.Collections.Generic.List{``0})">
+        <member name="M:Peergrade_7.Intruments.Serializer.Serialize``1(System.Collections.Generic.List{``0},System.String)">
             <summary>
             Метод сериализации.
             </summary>
@@ -144,57 +144,67 @@
             </summary>
             <returns>Сгенерированное имя пользователя и его почтовый адрес</returns>
         </member>
+        <member name="T:Peergrade_7.Models.Mail">
+            <summary>
+            Класс Mail.
+            </summary>
+        </member>
         <member name="P:Peergrade_7.Models.Mail.Subject">
             <summary>
-            
+            Тема сообщения.
             </summary>
         </member>
         <member name="P:Peergrade_7.Models.Mail.Message">
             <summary>
-            
+            Содержание сообщения.
             </summary>
         </member>
         <member name="P:Peergrade_7.Models.Mail.SenderId">
             <summary>
-            
+            Id отправителя.
             </summary>
         </member>
         <member name="P:Peergrade_7.Models.Mail.ReceiverId">
             <summary>
-            
+            Id получателя.
             </summary>
         </member>
         <member name="M:Peergrade_7.Models.Mail.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
-            
+            Конструктор класса Mail.
             </summary>
-            <param name="subject"></param>
-            <param name="message"></param>
-            <param name="senderId"></param>
-            <param name="receiverId"></param>
+            <param name="subject">Темма сообщения</param>
+            <param name="message">Содержание сообщения</param>
+            <param name="senderId">id отправителя</param>
+            <param name="receiverId">id получателя</param>
+        </member>
+        <member name="T:Peergrade_7.Models.User">
+            <summary>
+            Класс User.
+            </summary>
         </member>
         <member name="P:Peergrade_7.Models.User.UserName">
             <summary>
-            
+            Имя пользователя.
             </summary>
         </member>
         <member name="P:Peergrade_7.Models.User.Email">
             <summary>
-            
+            Почтовый адрес пользователя.
             </summary>
         </member>
         <member name="M:Peergrade_7.Models.User.#ctor(System.String,System.String)">
             <summary>
-            
+            Конструктор класса User.
             </summary>
-            <param name="name"></param>
-            <param name="email"></param>
+            <param name="name">Имя пользователя</param>
+            <param name="email">Почтовый адрес пользователя</param>
         </member>
         <member name="M:Peergrade_7.Models.User.CompareTo(Peergrade_7.Models.User)">
             <summary>
-            
+            Сравнение пользователей по почтовому адресу.
             </summary>
-            <param name="obj"></param>
+            <param name="user">Пользователь</param>
             <returns></returns>
         </member>
     </members>
