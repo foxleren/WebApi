@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp</name>
+    </assembly>
+    <members>
+        <member name="T:WebApp.Controllers.MessageController">
+            <summary>
+            Класс контроллера.
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.Post">
+            <summary>
+            Генерация пользователей.
+            </summary>
+            <returns>Состояние вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetAllUsers">
+            <summary>
+            Получение информации о всех пользователях.
+            </summary>
+            <returns>Список пользователей</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetUserByEmail(System.String)">
+            <summary>
+            Получение информации о пользователе по адресу почты.
+            </summary>
+            <param name="email"></param>
+            <returns>Состояние вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetMails">
+            <summary>
+            Получение списка всех писем.
+            </summary>
+            <returns>Состояние вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetBySenderAndReceiverId(System.String,System.String)">
+            <summary>
+            Получение списка сообщений из диалога двух пользователей.
+            </summary>
+            <param name="senderId">id отправителя</param>
+            <param name="receiverId">id получателя</param>
+            <returns>Список сообщений</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetBySenderId(System.String)">
+            <summary>
+            Получение всех писем отправителя.
+            </summary>
+            <param name="senderId">id отправителя</param>
+            <returns>Список сообщений</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetByReceiverId(System.String)">
+            <summary>
+            Получение сообщений получателя.
+            </summary>
+            <param name="receiverId">id получателя</param>
+            <returns>Список  сообшений</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.PostNewUser(System.String,System.String)">
+            <summary>
+            Добавление нового пользователя.
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <param name="email">Почта пользователя</param>
+            <returns>Статус вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.PostNewMessage(System.String,System.String,System.String,System.String)">
+            <summary>
+            Добавление нового сообщения.
+            </summary>
+            <param name="subject">Тема письма</param>
+            <param name="message">Содержание сообщения</param>
+            <param name="senderId">id отправителя</param>
+            <param name="receiverId">id получателя</param>
+            <returns>Статус вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetUsersPartly(System.Int32,System.Int32)">
+            <summary>
+            Получение определенного кол-ва пользователей.
+            </summary>
+            <param name="offset">Начальный индекс</param>
+            <param name="limit">Кол-во пользователей для вывода</param>
+            <returns>Список пользователей из выбранного интервала</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GetDataFromFile">
+            <summary>
+            Считывание данных о пользователях и их сообщениях из
+            файла .json.
+            </summary>
+            <returns>Статус вызова</returns>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.InitializeUsers">
+            <summary>
+            Иницииализация пользователей.
+            </summary>
+        </member>
+        <member name="M:WebApp.Controllers.MessageController.GenerateMails(WebApp.Models.User)">
+            <summary>
+            Генерация писем пользователя.
+            </summary>
+            <param name="user">ВЫбранный пользователь</param>
+        </member>
+        <member name="T:WebApp.Instruments.Serializer">
+            <summary>
+            Класс, реализующий сериализацию и десериализацию.
+            </summary>
+        </member>
+        <member name="M:WebApp.Instruments.Serializer.SerializeData``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Определение типа данных и вызов метода сериализации.
+            </summary>
+            <param name="objects">Список объектов для сериализации</param>
+            <param name="path">Путь к файлу .json</param>
+            <typeparam name="T">Тип принимаемых данных</typeparam>
+        </member>
+        <member name="M:WebApp.Instruments.Serializer.Serialize``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Метод сериализации.
+            </summary>
+            <param name="list">Список объектов для сериализации</param>
+            <param name="path">Путь к файлу</param>
+            <typeparam name="T">Тип принимаемых данных</typeparam>
+        </member>
+        <member name="M:WebApp.Instruments.Serializer.DeserializeData(System.Collections.Generic.List{WebApp.Models.User}@,System.Collections.Generic.List{WebApp.Models.Mail}@)">
+            <summary>
+            Метод десериализации.
+            </summary>
+            <param name="listOfUsers">Список пользователей</param>
+            <param name="listOfMails">Список сообщений</param>
+        </member>
+        <member name="T:WebApp.Instruments.TextGenerator">
+            <summary>
+            Класс генерации текста для имен пользователей и их сообщений.
+            </summary>
+        </member>
+        <member name="M:WebApp.Instruments.TextGenerator.GenerateMessageText">
+            <summary>
+            Метод генерации текста для сообщений.
+            </summary>
+            <returns>Сгенерированный текст</returns>
+        </member>
+        <member name="M:WebApp.Instruments.TextGenerator.GenerateUserData">
+            <summary>
+            Метод генерации данных пользователя.
+            </summary>
+            <returns>Сгенерированное имя пользователя и его почтовый адрес</returns>
+        </member>
+        <member name="T:WebApp.Models.Mail">
+            <summary>
+            Класс Mail.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.Mail.Subject">
+            <summary>
+            Тема сообщения.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.Mail.Message">
+            <summary>
+            Содержание сообщения.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.Mail.SenderId">
+            <summary>
+            Id отправителя.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.Mail.ReceiverId">
+            <summary>
+            Id получателя.
+            </summary>
+        </member>
+        <member name="M:WebApp.Models.Mail.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Конструктор класса Mail.
+            </summary>
+            <param name="subject">Темма сообщения</param>
+            <param name="message">Содержание сообщения</param>
+            <param name="senderId">id отправителя</param>
+            <param name="receiverId">id получателя</param>
+        </member>
+        <member name="T:WebApp.Models.User">
+            <summary>
+            Класс User.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.User.UserName">
+            <summary>
+            Имя пользователя.
+            </summary>
+        </member>
+        <member name="P:WebApp.Models.User.Email">
+            <summary>
+            Почтовый адрес пользователя.
+            </summary>
+        </member>
+        <member name="M:WebApp.Models.User.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор класса User.
+            </summary>
+            <param name="name">Имя пользователя</param>
+            <param name="email">Почтовый адрес пользователя</param>
+        </member>
+        <member name="M:WebApp.Models.User.CompareTo(WebApp.Models.User)">
+            <summary>
+            Сравнение пользователей по почтовому адресу.
+            </summary>
+            <param name="user">Пользователь</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Program">
+            <summary>
+            Класс Program.
+            </summary>
+        </member>
+        <member name="M:WebApp.Program.Main(System.String[])">
+            <summary>
+            Точка входа программы.
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:WebApp.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Метод IHostBuilder.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApp.Startup">
+            <summary>
+            Класс Startup.
+            </summary>
+        </member>
+        <member name="M:WebApp.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Конструктор.
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:WebApp.Startup.Configuration">
+            <summary>
+            Конфигурация.
+            </summary>
+        </member>
+        <member name="M:WebApp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:WebApp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
