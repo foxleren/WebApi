@@ -1,16 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/M8NuEgs8nIHIQi5ga456D2h2f0nEZo9mfU425e3lKr+7YJAZefkhtu+DWrzNgEjriLjP3UDv8P1gmRk6FAtEw==",
+  "dgSpecHash": "0y5kuE7e9TRfXZyOuvB7U5rqbtqSZ5z7FR/UCyFAnmdE0QldP7OnoYq/mJ2HwzN+wCunMrLG5xauOyUKMljC8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\WebApp.csproj",
+  "projectFilePath": "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\foxle\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\foxle\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\foxle\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\foxle\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\foxle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\foxle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
-    "C:\\Users\\foxle\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\foxle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }

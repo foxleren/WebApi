@@ -232,6 +232,11 @@ namespace WebApp.Controllers
                     return NoContent();
                 }
 
+                if (_users.Find(x => x.UserName == userName || x.Email == email) != null)
+                {
+                    return BadRequest("Пользователь уже зарегистрирован.");
+                }
+
                 _users.Add(newUser);
                 GenerateMails(newUser);
                 Serializer.SerializeData(_users, UserPath);

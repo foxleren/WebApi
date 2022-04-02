@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\WebApp.csproj": {}
+    "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\WebApp.csproj": {
+    "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\WebApp.csproj",
+        "projectPath": "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\foxle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\foxle\\Desktop\\WebApp\\WebApp\\obj\\",
+        "outputPath": "C:\\Users\\foxle\\Documents\\GitHub\\WebApi\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\foxle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,12 +55,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
